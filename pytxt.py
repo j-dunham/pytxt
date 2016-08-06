@@ -22,8 +22,8 @@ class EmailServer:
         self.server.sendmail(sender, recipient, msg.as_string())
         self.server.quit()
 
-    def send_pic(self, sender, recipient, message, pic):
-        img_raw = open(pic, 'rb').read()
+    def send_pic(self, sender, recipient, message, pic_path):
+        img_raw = open(pic_path, 'rb').read()
         img = MIMEImage(img_raw)
 
         self.server.login(self.usr, self.pwd)
