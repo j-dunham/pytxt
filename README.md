@@ -1,8 +1,8 @@
-# PyTxt  :email:
-## _a library to simplifiy sending texts via email_
+# PyTxt
+## _A library to simplifiy sending texts via email_
 
 
-##### Example Usage
+#### Example Usage
 ```python
 # Setups up email client for sending messages 
 sender = Sender(email="email@gmail.com", pwd="password")
@@ -15,4 +15,4 @@ conversation.say("Hello World")
 # Checks to see if Bob responded to message    
 conversation.check()
 ```
-##### *currently only tested with GMAIL*
+##### *Currently only tested with GMAIL*
